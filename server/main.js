@@ -1,5 +1,6 @@
-import { Meteor } from 'meteor/meteor';
+import imports_from_package from "/imports/imports-from-packages";
 
-Meteor.startup(() => {
-  // code to run on server at startup
-});
+console.log( `main :: ${ imports_from_package }` );
+
+console.log( `main :: ${ exported_to_imports }` );
+console.log( `main :: ${ imports_from_imports }` );

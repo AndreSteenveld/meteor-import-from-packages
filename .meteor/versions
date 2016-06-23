@@ -1,4 +1,6 @@
 allow-deny@1.0.5
+andre:exported-to-imports@0.0.1
+andre:imports-from-imports@0.0.1
 autopublish@1.0.7
 autoupdate@1.2.10
 babel-compiler@6.8.2
