@@ -5,7 +5,12 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "aurelia-dependency-injection": "^1.0.0-rc.1.0.0",
+    "aurelia-event-aggregator": "^1.0.0-rc.1.0.0",
     "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-runtime": "^6.9.2",
     "meteor-node-stubs": "~0.2.0"
   }
 }
