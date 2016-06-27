@@ -22,3 +22,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 
 andre:exported-to-imports
 andre:imports-from-imports
+andre:package-with-class-properties
