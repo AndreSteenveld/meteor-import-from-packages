@@ -1,5 +1,5 @@
 import { EventAggregator } from "aurelia-event-aggregator";
-import { Container } from "aurelia-dependency-injection";
+import container from "meteor/andre:di-container";
 
 DependencyInjectedClass = class DependencyInjectedClass {
 
@@ -8,13 +8,19 @@ DependencyInjectedClass = class DependencyInjectedClass {
 	constructor( event_aggregator ){
 
 		if( !arguments.length )
-			return Container.instance.get( DependencyInjectedClass );
+			return container.get( DependencyInjectedClass );
 
-		console.log( `YAY we got a thing :: ${ typeof event_aggregator }` );
+		console.log( `We got an event aggregator :: [ ${ typeof event_aggregator } ]`)
+
+		Object.assign( this, { event_aggregator } );
+
+		console.log( `typeof this.event_aggregator === ${ typeof this.event_aggregator }` );
 
 	}
 
 };
+
+container.registerTransient( DependencyInjectedClass );
 
 //export DependencyInjectedClass;
 export default DependencyInjectedClass;

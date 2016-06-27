@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'andre:using-installed-libs',
+  name: 'andre:di-container',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -12,14 +12,13 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.3.4.1');
-  api.use([ 'ecmascript', "andre:di-container" ]);
-  api.mainModule('using-installed-libs.js');
-  api.export( "DependencyInjectedClass" )
+  api.use('ecmascript');
+  api.mainModule('di-container.js');
 });
 
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('andre:using-installed-libs');
-  api.mainModule('using-installed-libs-tests.js');
+  api.use('ander:di-container');
+  api.mainModule('di-container-tests.js');
 });

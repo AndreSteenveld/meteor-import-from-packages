@@ -1,4 +1,5 @@
 allow-deny@1.0.5
+andre:di-container@0.0.1
 andre:exported-to-imports@0.0.1
 andre:imports-from-imports@0.0.1
 andre:package-with-class-properties@0.0.1
